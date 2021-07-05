@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}"/>
+      <title>{{ title }}</title>
+    </head>
+    
+    <body>
+      <header>
+        <h1>Rock paper scissors game</h1>
+        <nav>
+          <ul class= "list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/player_1_choice/player_2_choice"Rock On!</a></li>
+            <li><a href="/play_game">2 Player Game</a></li> 
+            <li><a href="/instructions">How to play</a></li>     
+          </ul>
+        </nav>
+      </header>
+      <main>
+        
+          
+        <main class="game_window">
+          {% block content %}
+          {% endblock %}
+        </main>
+        <footer></footer>
+      </main>
+      <footer>
+        <footnote>Sara & Princess have done all the work, Stephen forked our spoon</footnote>
+      </footer>
+    </body>
+    </html>

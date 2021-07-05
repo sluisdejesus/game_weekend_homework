@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+
+{% block content%}
+<main>
+    <h1>Shall we play a little game..</h1>
+<form class="game_form" id="player_setup" action="/play_game" method="post">
+
+    <div id="player_1">
+        <label for="player_1_name_">Player 1 name:</label>
+        <input type="text" name="player_1_name" class="player_input">
+        <div id="player_1_choices">
+            
+            {% for choice in choices %}
+            <label for="player_1_choice">{{ choice }}</label>
+            <input type="radio" name="player_1_choice" value="{{ choice }}" class="hidden_selection">
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="player_2">
+        <label for="player_2_name">Player 2 name: </label>
+        <input type="text" name="player_2_name" class="player_input">
+        <div id="player_2_choices">
+            {% for choice in choices %}
+            <label for="player_2_choice">{{ choice }}</label>
+            <input type="radio" name="player_2_choice" value="{{ choice }}" class="hidden_selection">
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <br>
+    <input type="submit" value="Start Game" id="start_game">
+</form></main>
+
+
+
+{% endblock %}

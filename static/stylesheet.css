@@ -1,0 +1,48 @@
+body{
+    background-color: deeppink;
+    font-family: 'Yomogi', cursive;
+    color: deeppink;
+    background-image: url('rock-paper-scissors-neon-icons.png');
+    background-size: cover;
+}
+
+header{
+        display:flex;
+        justify-content: space-evenly;
+        text-align: center;
+        background-color: deepskyblue;
+}
+
+body > main > h1{
+                text-align: center;
+                
+}
+
+nav > ul {
+       list-style: none;
+   }
+
+ul > li {
+    display: flex;
+    justify-content: space space-evenly;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:deeppink;
+  color: white;
+  text-align: center;
+}
+
+.game_form {
+    background-color: transparent;
+}
+
+.instructions {
+    color: white;
+}
+
